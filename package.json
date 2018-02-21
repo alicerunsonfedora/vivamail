@@ -1,0 +1,30 @@
+{
+  "name": "vivamail",
+  "productName": "Viva Courier",
+  "version": "0.1.0",
+  "description": "A simple Electron-based Tutanota client.",
+  "author": "Marquis Kurt",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-macos": "build --mac dmg",
+    "build-linux-generic": "build --linux AppImage tar.gz --x64",
+    "build-snappy": "build --linux snap tar.gz",
+    "build-win": "build --win nsis appx"
+  },
+  "keywords": [
+    "Productivity",
+    "E-mail",
+    "Tutanota"
+  ],
+  "license": "GNU GPL v3",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "build": {
+    "appId": "io.github.alicerunsonfedora.vivamail",
+    "dmg": {},
+    "win": {}
+  }
+}
